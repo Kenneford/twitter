@@ -14,23 +14,37 @@
     cursor: pointer;
     color: #29c3f7;
 }
+.fa-house{
+    margin-left: -2px;
+}
+.fa-house, .fa-envelope, .fa-bookmark{
+    margin-right: 10px;
+}
+.fa-bookmark{
+    margin-left: 5px;
+}
+.fa-bell, .fa-user{
+    margin-left: 2px;
+}
+.special{
+    margin-right: 10px;
+}
 .leftPane-icons{
     position: absolute;
     top: 60px;
 }
 .leftPane-icons i{
     margin-top: 20px;
-    margin-right: 10px;
     font-size: 1.3em;
 }
 .leftPane-icons a{
     text-decoration: none;
+    padding: 10px;
     color: #fff;
 }
 .leftPane-icons a:hover{
     border-radius: 20px;
     background: #3b3939;
-    padding: 10px;
 }
 .leftPane button{
     width: 150px;

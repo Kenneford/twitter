@@ -11,13 +11,13 @@ export default function LeftPane() {
             </div>
             <div className='leftPane-icons'>
                 <div><a href=''><i className="fa-solid fa-house"></i> Home</a></div>
-                <div><a href=''><i className="fa-brands fa-wpexplorer"></i> Explore</a></div>
-                <div><a href=''><i className="fa-regular fa-bell"></i> Notification</a></div>
+                <div><a href=''><i className="fa-brands fa-wpexplorer special"></i> Explore</a></div>
+                <div><a href=''><i className="fa-regular fa-bell special"></i> Notification</a></div>
                 <div><a href=''><i className="fa-regular fa-envelope"></i> Message</a></div>
                 <div><a href=''><i className="fa-regular fa-bookmark"></i> Bookmark</a></div>
-                <div><a href=''><i className="fa-brands fa-elementor"></i> Lists</a></div>
-                <div><a href=''><i className="fa-regular fa-user"></i> Profile</a></div>
-                <div><a href=''><i className="fa-brands fa-gg-circle"></i> More</a></div>
+                <div><a href=''><i className="fa-brands fa-elementor special"></i> Lists</a></div>
+                <div><a href=''><i className="fa-regular fa-user special"></i> Profile</a></div>
+                <div><a href=''><i className="fa-brands fa-gg-circle special"></i> More</a></div>
                 <button>Tweet</button>
             </div>
             <div className='user'>
