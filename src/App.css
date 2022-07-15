@@ -1,14 +1,8 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   display: flex;
   justify-content: space-between;
 }
-.leftPane{
-  width: 20%;
-  height: 100vh;
-  background: #202020;
-}
-.rightPane{
-  width: 20%;
-  height: 100vh;
-  background: #202020;
-}
+

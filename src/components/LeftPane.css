@@ -1,0 +1,74 @@
+.leftPane{
+    width: 20%;
+    height: 100vh;
+    color: #fff;
+    background: #202020;
+}
+.leftPane-cont{
+    width: 40%;
+    margin: auto;
+    padding-top: 25px;
+}
+.fa-twitter{
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #29c3f7;
+}
+.leftPane-icons{
+    position: absolute;
+    top: 60px;
+}
+.leftPane-icons i{
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 1.3em;
+}
+.leftPane-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.leftPane-icons a:hover{
+    border-radius: 20px;
+    background: #3b3939;
+    padding: 10px;
+}
+.leftPane button{
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #29c3f7;
+}
+.user{
+    position: absolute;
+    bottom: 0;
+}
+.user a{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.user-name{
+    margin-top: -10px;
+}
+.nickName{
+    font-weight: 100;
+    color: #cccc;
+    margin-top: -20px;
+}
+.user a:hover{
+    background: #3b3939;
+    border-radius: 30px;
+}
+.user i{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
