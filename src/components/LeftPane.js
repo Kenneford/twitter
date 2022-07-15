@@ -27,7 +27,7 @@ export default function LeftPane() {
                     <p>JustKenn</p>
                     <p className='nickName'>@Justkenn</p>
                 </div>
-                <div><i className="fa-brands fa-gg-circle"></i></div>
+                <div className='dots'>...</div>
                 </a>
             </div>
         </div>

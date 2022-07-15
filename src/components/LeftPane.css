@@ -44,7 +44,7 @@
 }
 .leftPane-icons a:hover{
     border-radius: 20px;
-    background: #3b3939;
+    background: #303030;
 }
 .leftPane button{
     width: 150px;
@@ -65,7 +65,7 @@
 }
 .user{
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 .user a{
     display: flex;
@@ -83,11 +83,12 @@
     margin-top: -20px;
 }
 .user a:hover{
-    background: #3b3939;
+    background: #303030;
     border-radius: 30px;
 }
-.user i{
+.dots{
     position: absolute;
+    font-size: 1.5em;
     right: 10px;
-    top: 15px;
+    top: 2px;
 }
