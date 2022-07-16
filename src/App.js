@@ -127,14 +127,8 @@ function App() {
   return (
     <div className="App">
         <LeftPane />
-            {users.map((user, id) =>{
-                console.log(user)
-                return(
-                    <MainPane 
-                    key={id}
-                    user={user} />
-                )
-            })}
+        <MainPane 
+        users={users} />
         <RightPane />
             {/* <Routes>
                 <Route path='/messages'>

@@ -1,8 +1,7 @@
 import React from 'react'
-import AllMessages from './AllMessages'
-import MainPane from './MainPane'
+import Message from './Message'
 
-const allmessages = [   
+const allMessages = [   
     {"_id": 101,
     "author_id": 101,
     "date":"2009-05-17T21:01:09.476Z",
@@ -125,17 +124,19 @@ const allmessages = [
     }
 
 ]
-export default function Messages() {
+export default function Messages({users}) {
   return (
     <div>
-        {allmessages.map((message, id) =>{
+        {allMessages.map((message, id) =>{
             console.log(message)
+            const user = users.find(e => e._id === message.author_id)
+            console.log(user)
             return(
               <div>
-                <AllMessages 
+                <Message
                 key={id}
-                message={message} />
-                <MainPane message={message}/>
+                message={message} 
+                user={user}/>
               </div>
             )
         })}
