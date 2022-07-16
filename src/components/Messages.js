@@ -140,7 +140,7 @@ export default function Messages({users}) {
               </div>
             )
         })}
-        
+        {/* <MainPane date={message.date}/> */}
     </div>
   )
 }
