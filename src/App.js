@@ -5,7 +5,6 @@ import MainPane from './components/MainPane';
 import RightPane from './components/RightPane';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Messages from './components/Messages';
 // import AllMessages from './components/AllMessages';
 
 const users = [   
@@ -128,20 +127,9 @@ function App() {
     console.log({username})
     <div className="App">
         <LeftPane />
-            {users.map((user, id) =>{
-                console.log(user)
-                return(
-                    <MainPane 
-                    key={id}
-                    user={user} />
-                )
-            })}
+        <MainPane 
+        users={users} />
         <RightPane />
-            {/* <Routes>
-                <Route path='/messages'>
-                    <LeftPane />
-                </Route>
-            </Routes> */}
     </div>
   );
 }

@@ -1,11 +1,13 @@
 .leftPane{
-    width: 80%;
+    width: 20%;
     height: 100vh;
     color: #fff;
 }
 .leftPane-cont{
-    width: 40%;
-    margin-left: 20px;
+    /* width: 40%; */
+    height: inherit;
+    position: fixed;
+    margin-left: 5%;
     padding-top: 25px;
 }
 .fa-twitter{

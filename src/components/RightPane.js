@@ -20,7 +20,7 @@ export default function RightPane() {
                 </div>
                 <div className='sports'>
                     <p className='s-trend'>Sports . Trending</p>
-                    <h3 className='s-h3'>#Qatar2022</h3>
+                    <h3 className='s-h3'>#JustinForPresident2022</h3>
                     <p className='s-tweets'>95.2K Tweets</p>
                 </div>
                 <div className='germany'>

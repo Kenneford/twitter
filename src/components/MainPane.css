@@ -3,3 +3,10 @@
     background: #292929;
     color: #fff;
 }
+.msg-content{
+    display: flex;
+}
+.msg-content img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
