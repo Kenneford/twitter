@@ -6,8 +6,9 @@ import RightPane from './components/RightPane';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import AllMessages from './components/AllMessages';
+import { useState, useEffect } from 'react';
 
-const users = [   
+{/* const users = [   
     {"_id": 101,
     "name": {
         "title": "Ms",
@@ -120,17 +121,36 @@ const users = [
       "Description": "Phao has worked in the technology and association space for 15 years. He is the CEO and President of MemberClicks, an all-in-one membership management software company, and has helped them grow from just under 300 customers in 2004 to 3,000 today across North America"
     }
 ]      
-
+*/}
 
 function App() {
+  const [messages, setMessages] = useState();
+  const [users, setUsers] = useState();
+
+  console.log("Hello outside of useffect");
+useEffect(() => {
+  console.log("Hello");
+  fetch("https://mini2-2twitter.herokuapp.com/messages")     
+      .then((res) => res.json())
+      .then((data) => {setMessages(data)})
+       /* console.log(data); */     
+      .catch((e) => console.log(e.message));  
+}, []);
+
+useEffect(() => {
+  console.log("Hello from the users");
+  fetch("https://mini2-2twitter.herokuapp.com/users")     
+      .then((res) => res.json())
+      .then((data) => {setUsers(data)})     
+      .catch((e) => console.log(e.message));  
+}, []);
+console.log(users)
   return (
     <div className="App">
-      
+      {/* <h1>Hello there</h1> */}
         <LeftPane />
-        <MainPane 
-        users={users} />
-        <RightPane
-        props={users} />
+        <MainPane users={users} messages={messages} />
+        <RightPane props={users} />
     </div>
   );
 }

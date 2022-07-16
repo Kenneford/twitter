@@ -6,7 +6,8 @@ export default function Message({message, user}) {
     <div>
         <p>{message.text}</p>
         <p>{message.author_id}</p>
-        <p>{user.username}</p>
+        {/* <p>{user.username}</p> */}
+        <p>Some username</p>
         <p>{message.date}</p>
         <p>{message.likes}</p>
     </div>

@@ -32,7 +32,7 @@ export default function RightPane({props}) {
                 <button className='trends-btn'>Show more</button>
         </div>
         
-        <div> <WhoToFollow users={props}/></div>
+        <div> <WhoToFollow props={props}/></div>
         </div>)}
         {/* {/* <div className='follow'>
             <h2>Who to follow</h2>
