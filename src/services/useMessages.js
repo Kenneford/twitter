@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 
-const serverUrl="https://mini2-2twitter.herokuapp.com" 
+/* const serverUrl="https://mini2-2twitter.herokuapp.com"  */
 
 
 const useMessages = () => {

@@ -3,10 +3,10 @@ import Messages from './Messages'
 import './MainPane.css'
 import logo from '../logo.svg'
 
-export default function MainPane({users, messages}) {
+export default function MainPane({messages}) {
 
-  if (!messages || !users ) {
-    return <h2>Loading...</h2>
+  if (!messages) {
+    return <h2>Loading main...</h2>
   }
 
   return (
@@ -16,7 +16,7 @@ export default function MainPane({users, messages}) {
                 <img src={logo} alt='user-image' width='50px'/>
                 <input type="text" placeholder="What's hapenning?" />
         </div>
-        <Messages users={users}/>
+        <Messages messages={messages}/>
     </div>
   )
 }

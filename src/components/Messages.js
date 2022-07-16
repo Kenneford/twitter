@@ -124,16 +124,16 @@ const allMessages = [
     }
 
 ]
-export default function Messages({users}) {
-  if(!users){
-    return <div>Loading...</div>
+export default function Messages({messages}) {
+  if(!messages){
+    return <div>Loading messages...</div>
   }
   return (
     <div className='messages-cont'>
-        {allMessages.map((message, id) =>{
+        {messages.map((message, id) =>{
             console.log(message)
-            const user = users.find(e => e._id === message.author_id)
-            console.log(user)
+            //const user = users.find(e => e._id === message.author_id)
+            //console.log(user)
             return(
               <div key={id}>
                 <Message

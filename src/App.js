@@ -136,13 +136,26 @@ function App() {
       setUsers(result)
     }
     readUsers()
-  })
+  }, [])
+
+  const [messages, setMessages] = useState([])
+  useEffect(() =>{
+    const readMessages = async () =>{
+      const response = await fetch(`
+      https://mini2-2twitter.herokuapp.com/messages/
+      `)
+      const result = await response.json()
+      console.log(result)
+      setMessages(result)
+    }
+    readMessages()
+  }, [])
   
   return (
     <div className="App">
           <LeftPane />
           <MainPane 
-          users={users} />
+          messages={messages} />
           <RightPane users={users}/>
     </div>
   );
