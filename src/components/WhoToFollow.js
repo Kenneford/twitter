@@ -1,5 +1,9 @@
 
 function WhoToFollow({users}){
+    if (!users || users.length==0) {
+        return <p>Loading...</p>
+        
+    }
     console.log(users);
     return(
 <div>
