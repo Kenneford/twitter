@@ -126,6 +126,9 @@ const allMessages = [
 
 ]
 export default function Messages({users}) {
+  if(!users){
+    return <div>Loading...</div>
+  }
   return (
     <div className='messages-cont'>
         {allMessages.map((message, id) =>{

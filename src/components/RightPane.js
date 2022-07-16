@@ -65,10 +65,12 @@ export default function RightPane() {
             </div>
             <button className='trends-btn'>Show more</button>
         </div>
-        <div>
-            <p>Terms of Service</p>
-            <p>Privacy Policy</p>
-            <p>Cookies Policy</p>
+        <div className='footer'>
+            <div className='policies'>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Cookies Policy</p>
+            </div>
         </div>
     </div>
   )
