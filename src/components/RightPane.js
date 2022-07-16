@@ -1,10 +1,9 @@
 import React from 'react'
 import './RightPane.css'
-import logo from '../logo.svg'
 import WhoToFollow from './WhoToFollow'
 
-export default function RightPane({props}) {
-    console.log(props);
+export default function RightPane({users}) {
+
   return (
     <div className='rightPane'>
         <div>
@@ -32,43 +31,14 @@ export default function RightPane({props}) {
                 <button className='trends-btn'>Show more</button>
         </div>
         
-        <div> <WhoToFollow props={props}/></div>
-        </div>)}
-        {/* {/* <div className='follow'>
-            <h2>Who to follow</h2>
-            <div className='userFollow'>
-                <img src={logo} alt='user-image' width='50px'/>
-                <div className='user-name'>
-                    <p>JustKenn</p>
-                    <p className='nickName'>@Justkenn</p>
-                </div>
-                <button className='follow-btn'>Follow</button>
+        <div> <WhoToFollow users={users}/></div>
+       
+        
+        <div className='footer'>
+            <div className='policies'>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+                <p>Cookies Policy</p>
             </div>
-            <div className='userFollow'>
-                <img src={logo} alt='user-image' width='50px'/>
-                <div className='user-name'>
-                    <p>JustKenn</p>
-                    <p className='nickName'>@Justkenn</p>
-                </div>
-                <button className='follow-btn'>Follow</button>
-            </div>
-            <div className='userFollow'>
-                <img src={logo} alt='user-image' width='50px'/>
-                <div className='user-name'>
-                    <p>JustKenn</p>
-                    <p className='nickName'>@Justkenn</p>
-                </div>
-                <button className='follow-btn'>Follow</button>
-            </div>
-            <div className='userFollow'>
-                <img src={logo} alt='user-image' width='50px'/>
-                <div className='user-name'>
-                    <p>JustKenn</p>
-                    <p className='nickName'>@Justkenn</p>
-                </div>
-                <button className='follow-btn'>Follow</button>
-            </div>
-            <button className='trends-btn'>Show more</button>
         </div>
-    
-   */}
+    </div>)}

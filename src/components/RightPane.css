@@ -129,3 +129,18 @@
     color: #cccc;
     margin-top: -15px;
 }
+
+.footer{
+    width: 100%;
+    padding: 5px;
+}
+.policies{
+    width: 90%;
+    margin: auto;
+  display: flex;
+  color: #555454;
+  font-size: .8em;
+}
+.policies p{
+    margin: 2px;
+}
