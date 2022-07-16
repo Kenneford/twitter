@@ -15,13 +15,13 @@ export default function RightPane({users}) {
                 <h2>Trends for you</h2>
                 <div className='politics'>
                     <p className='p-trend'>Politics . Trending</p>
-                    <h3 className='p-h3'>#JustKennforpresident2022</h3>
+                    <h3 className='p-h3'>#JustKennForPresident2022</h3>
                     <p className='p-tweets'>45.8K Tweets</p>
                 </div>
                 <div className='sports'>
                     <p className='s-trend'>Sports . Trending</p>
                     <h3 className='s-h3'>#JustinForPresident2022</h3>
-                    <p className='s-tweets'>95.2K Tweets</p>
+                    <p className='s-tweets'>500.2K Tweets</p>
                 </div>
                 <div className='germany'>
                     <p className='g-trend'>Trending in Germany</p>
