@@ -1,6 +1,7 @@
 import React from 'react'
 import './RightPane.css'
 import logo from '../logo.svg'
+import WhoToFollow from './WhoToFollow'
 
 export default function RightPane() {
   return (
@@ -29,7 +30,10 @@ export default function RightPane() {
                 </div>
                 <button className='trends-btn'>Show more</button>
         </div>
-        <div className='follow'>
+        </div>)}
+        <div> <WhoToFollow /></div>
+
+        {/* {/* <div className='follow'>
             <h2>Who to follow</h2>
             <div className='userFollow'>
                 <img src={logo} alt='user-image' width='50px'/>
@@ -65,6 +69,5 @@ export default function RightPane() {
             </div>
             <button className='trends-btn'>Show more</button>
         </div>
-    </div>
-  )
-}
+    
+   */}

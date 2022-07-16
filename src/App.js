@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import LeftPane from './components/LeftPane';
 import MainPane from './components/MainPane';
@@ -125,6 +125,7 @@ const users = [
 
 function App() {
   return (
+    console.log({username})
     <div className="App">
         <LeftPane />
             {users.map((user, id) =>{

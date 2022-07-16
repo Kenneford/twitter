@@ -1,0 +1,18 @@
+import users from "/App"
+
+function WhoToFollow(){
+    return(
+        <div>{First} {Last}</div>
+        <div>{username}</div>
+        <div>{logo}</div>
+    )
+}
+
+
+export default WhoToFollow;
+
+
+first & Last name
+        username
+        profile picture
+        follow button
