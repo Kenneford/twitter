@@ -3,6 +3,7 @@ import './App.css';
 import LeftPane from './components/LeftPane';
 import MainPane from './components/MainPane';
 import RightPane from './components/RightPane';
+import React, { useState, useEffect } from "react";
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import AllMessages from './components/AllMessages';
@@ -122,13 +123,23 @@ const users = [
 ]      
 
 
+
 function App() {
+  // const [users, setUsers] = useState([])
+  // const readUsers = async () =>{
+  //   const response = await fetch(`
+  //   https://mini2-2twitter.herokuapp.com/users/
+  //   `)
+  //   const result = await response.json()
+  //   console.log(result)
+  //   setUsers(() => result.results)
+  // }
   return (
     <div className="App">
-        <LeftPane />
-        <MainPane 
-        users={users} />
-        <RightPane />
+          <LeftPane />
+          <MainPane 
+          users={users} />
+          <RightPane />
     </div>
   );
 }

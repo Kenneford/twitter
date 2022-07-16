@@ -1,6 +1,7 @@
 import React from 'react'
 import Message from './Message'
 
+
 const allMessages = [   
     {"_id": 101,
     "author_id": 101,
@@ -126,13 +127,13 @@ const allMessages = [
 ]
 export default function Messages({users}) {
   return (
-    <div>
+    <div className='messages-cont'>
         {allMessages.map((message, id) =>{
             console.log(message)
             const user = users.find(e => e._id === message.author_id)
             console.log(user)
             return(
-              <div>
+              <div key={id}>
                 <Message
                 key={id}
                 message={message} 
