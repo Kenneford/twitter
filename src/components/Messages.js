@@ -1,7 +1,9 @@
-import React from 'react'
-import Message from './Message'
+import React from 'react';
+import Message from './Message';
+import useMessages from "../services/useMessages";
+import { useState, useEffect } from 'react';
 
-const allMessages = [   
+/* const allMessages1 = [   
     {"_id": 101,
     "author_id": 101,
     "date":"2009-05-17T21:01:09.476Z",
@@ -121,26 +123,52 @@ const allMessages = [
     "comments":[
 
     ]
-    }
+    } 
 
-]
-export default function Messages({users}) {
+]*/
+function Messages() {
+
+  const [messages, setMessages] = useState();
+ 
+  useEffect(() => {
+
+    console.log("Hello");
+    fetch("https://mini2-2twitter.herokuapp.com/messages")     
+        .then((res) => res.json())
+        .then(data=> setMessages(data))
+         /* console.log(data); */     
+        .catch((e) => console.log(e.message));
+    
+
+
+
+  }, []);
+
+
+
+/*   let allMessages=useMessages(); */
+
+console.log(allMessages);
+const allMessages= messages;
+  
   return (
     <div>
         {allMessages.map((message, id) =>{
-            console.log(message)
-            const user = users.find(e => e._id === message.author_id)
-            console.log(user)
-            return(
-              <div>
+          const user = users.find(e => e._id === message.author_id);
+            console.log(message);            
+            console.log(user);
+          
                 <Message
                 key={id}
                 message={message} 
                 user={user}/>
-              </div>
-            )
+            
+            
         })}
         {/* <MainPane date={message.date}/> */}
     </div>
-  )
+  );
 }
+
+
+export default Messages;

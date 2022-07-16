@@ -3,7 +3,8 @@ import './RightPane.css'
 import logo from '../logo.svg'
 import WhoToFollow from './WhoToFollow'
 
-export default function RightPane() {
+export default function RightPane({props}) {
+    console.log(props);
   return (
     <div className='rightPane'>
         <div>
@@ -30,9 +31,9 @@ export default function RightPane() {
                 </div>
                 <button className='trends-btn'>Show more</button>
         </div>
+        
+        <div> <WhoToFollow users={props}/></div>
         </div>)}
-        <div> <WhoToFollow /></div>
-
         {/* {/* <div className='follow'>
             <h2>Who to follow</h2>
             <div className='userFollow'>

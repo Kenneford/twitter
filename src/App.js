@@ -124,12 +124,13 @@ const users = [
 
 function App() {
   return (
-    console.log({username})
     <div className="App">
+      
         <LeftPane />
         <MainPane 
         users={users} />
-        <RightPane />
+        <RightPane
+        props={users} />
     </div>
   );
 }
